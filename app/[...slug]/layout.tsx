@@ -1,7 +1,6 @@
 import { SideNav } from "../components/SideNavComponent";
-import { ChatArea } from "../components/ChatAreaComponent";
 
-export default function Rag2Layout() {
+export default function SlugLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex h-screen w-full">
       {/* Sidebar */}
@@ -9,7 +8,7 @@ export default function Rag2Layout() {
 
       {/* Main Content */}
       <div className="flex-1 p-4 overflow-auto">
-        <ChatArea title="rag2" page_name="rag2" />
+        {children}
       </div>
     </div>
   );

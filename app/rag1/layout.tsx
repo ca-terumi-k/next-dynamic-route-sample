@@ -9,7 +9,7 @@ export default function Rag1Layout() {
 
       {/* Main Content */}
       <div className="flex-1 p-4 overflow-auto">
-        <ChatArea title="chat" page_name="rag1" />
+        <ChatArea title="rag1" page_name="rag1" />
       </div>
     </div>
   );

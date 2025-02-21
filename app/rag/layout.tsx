@@ -1,6 +1,9 @@
+import { ChatArea } from "../components/ChatAreaComponent";
 import { SideNav } from "../components/SideNavComponent";
 
-export default function ChatLayout({ children }: { children: React.ReactNode }) {
+export default async function ChatLayout({ children, params }: { children: React.ReactNode, params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  
   return (
     <div className="flex h-screen w-full">
       {/* Sidebar */}
@@ -8,7 +11,7 @@ export default function ChatLayout({ children }: { children: React.ReactNode }) 
 
       {/* Main Content */}
       <div className="flex-1 p-4 overflow-auto">
-        {children}
+        <ChatArea title={slug} page_name={slug} />
       </div>
     </div>
   );
