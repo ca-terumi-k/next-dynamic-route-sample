@@ -12,7 +12,7 @@ export const ChatInputBtn = ({ pageName } : ChatInputBtnProps) => {
 
   const handleSend = () => {
     if (message.trim()) {
-      addMessage(pageName , message, 'User');
+      addMessage(pageName , message, 'user');
       setMessage('');
     }
   };
