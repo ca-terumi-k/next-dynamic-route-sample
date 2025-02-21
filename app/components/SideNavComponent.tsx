@@ -12,6 +12,11 @@ export const SideNav = () => {
       <div className="h-full bg-gray-800 text-white">
         <ul className="space-y-4 p-4">
           <li>
+            <Link href="/ttm" className="block p-2 hover:bg-gray-700 rounded">
+              templateSample
+            </Link>
+          </li>
+          <li>
             <Link href="/chat" className="block p-2 hover:bg-gray-700 rounded">
               chat
             </Link>
